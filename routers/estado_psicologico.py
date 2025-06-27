@@ -48,6 +48,12 @@ class RespuestaFormulario(BaseModel):
     class Config:
         extra = "forbid"
 
+class ActivarEvaluacionRequest(BaseModel):
+    usuario_id: str
+
+    class Config:
+        extra = "forbid"
+
 # ------------------ PROMPT TEMPLATE ------------------
 def construir_prompt(respuestas: List[RespuestaItem]) -> str:
     logger.info(f"Construyendo prompt para {len(respuestas)} respuestas")
@@ -196,21 +202,21 @@ async def evaluar_estado_emocional(data: RespuestaFormulario, db: Session = Depe
 
 
 @router.post("/activar-evaluacion-inicial")
-async def activar_evaluacion_inicial(usuario_id: str, db: Session = Depends(get_db)):
-    logger.info(f"Verificando evaluación inicial para usuario: {usuario_id}")
+async def activar_evaluacion_inicial(data: ActivarEvaluacionRequest, db: Session = Depends(get_db)):
+    logger.info(f"Verificando evaluación inicial para usuario: {data.usuario_id}")
     
     estado_existente = db.query(EstadoPsicologico)\
-        .filter_by(usuario_id=usuario_id)\
+        .filter_by(usuario_id=data.usuario_id)\
         .first()
 
     if estado_existente:
-        logger.info(f"Usuario {usuario_id} ya tiene evaluación registrada")
+        logger.info(f"Usuario {data.usuario_id} ya tiene evaluación registrada")
         return {
             "estado": "ya_registrado",
             "mensaje": "El perfil psicológico ya fue evaluado previamente.",
         }
 
-    logger.info(f"Usuario {usuario_id} necesita evaluación inicial")
+    logger.info(f"Usuario {data.usuario_id} necesita evaluación inicial")
     return {
         "estado": "pendiente",
         "mensaje": "Perfil psicológico aún no evaluado. El formulario puede ser mostrado.",
