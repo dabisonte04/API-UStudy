@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "categoria": "depresion",
+    "pregunta": "¿Con qué frecuencia te sientes triste o sin esperanza?"
+  },
+  {
+    "id": 2,
+    "categoria": "depresion",
+    "pregunta": "¿Sientes que has perdido el interés en cosas que antes disfrutabas?"
+  },
+  {
+    "id": 3,
+    "categoria": "depresion",
+    "pregunta": "¿Te sientes cansado o con poca energía con frecuencia?"
+  },
+  {
+    "id": 4,
+    "categoria": "depresion",
+    "pregunta": "¿Te sientes inútil o con baja autoestima?"
+  },
+  {
+    "id": 5,
+    "categoria": "depresion",
+    "pregunta": "¿Has tenido pensamientos negativos sobre ti mismo?"
+  },
+  {
+    "id": 6,
+    "categoria": "depresion",
+    "pregunta": "¿Tienes dificultades para concentrarte?"
+  },
+  {
+    "id": 7,
+    "categoria": "depresion",
+    "pregunta": "¿Has tenido problemas para dormir o duermes demasiado?"
+  },
+  {
+    "id": 8,
+    "categoria": "depresion",
+    "pregunta": "¿Has tenido pensamientos de hacerte daño o desaparecer?"
+  },
+  {
+    "id": 9,
+    "categoria": "ansiedad",
+    "pregunta": "¿Te sientes nervioso, ansioso o con miedo sin razón clara?"
+  },
+  {
+    "id": 10,
+    "categoria": "ansiedad",
+    "pregunta": "¿Tienes dificultades para controlar la preocupación?"
+  },
+  {
+    "id": 11,
+    "categoria": "ansiedad",
+    "pregunta": "¿Te cuesta relajarte o sientes tensión muscular?"
+  },
+  {
+    "id": 12,
+    "categoria": "ansiedad",
+    "pregunta": "¿Sientes que algo malo va a pasar, incluso sin motivos?"
+  },
+  {
+    "id": 13,
+    "categoria": "ansiedad",
+    "pregunta": "¿Te molestas o irritas con facilidad?"
+  },
+  {
+    "id": 14,
+    "categoria": "ansiedad",
+    "pregunta": "¿Evitas situaciones por miedo a que algo salga mal?"
+  },
+  {
+    "id": 15,
+    "categoria": "estres",
+    "pregunta": "¿Te sientes sobrecargado o abrumado por tus responsabilidades?"
+  },
+  {
+    "id": 16,
+    "categoria": "estres",
+    "pregunta": "¿Sientes que no tienes control sobre tu vida?"
+  },
+  {
+    "id": 17,
+    "categoria": "estres",
+    "pregunta": "¿Te cuesta cumplir con tus tareas o rutinas diarias?"
+  },
+  {
+    "id": 18,
+    "categoria": "estres",
+    "pregunta": "¿Te sientes presionado o bajo mucha exigencia?"
+  },
+  {
+    "id": 19,
+    "categoria": "estres",
+    "pregunta": "¿Te cuesta desconectarte de tus preocupaciones?"
+  },
+  {
+    "id": 20,
+    "categoria": "estres",
+    "pregunta": "¿Te afecta físicamente el estrés (dolores, cansancio, etc.)?"
+  },
+  {
+    "id": 21,
+    "categoria": "apoyo",
+    "pregunta": "¿Tienes personas en quienes confiar emocionalmente?"
+  },
+  {
+    "id": 22,
+    "categoria": "apoyo",
+    "pregunta": "¿Te sientes escuchado o comprendido por los demás?"
+  },
+  {
+    "id": 23,
+    "categoria": "apoyo",
+    "pregunta": "¿Tienes con quién hablar cuando te sientes mal?"
+  },
+  {
+    "id": 24,
+    "categoria": "apoyo",
+    "pregunta": "¿Te sientes solo con frecuencia?"
+  }
+]

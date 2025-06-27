@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+python-dotenv
+bcrypt
+passlib   # For password hashing
+cryptography
+dotenv
+slowapi
+email-validator
+pycryptodome
+openai
+pydantic
+requests
